@@ -24,5 +24,5 @@ function updateConn(element) {
     connReqCount--;
     connReq.innerText = connReqCount;
 
-    document.querySelector("#"+elemClasses[0]).remove();
+    element.parentElement.remove();
 }
