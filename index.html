@@ -38,7 +38,7 @@
                     <div class="card-top-bar">
                         <img src="imgs/ben_l.jpg" alt="user image" class="user-profile-picture my-picture">
                     </div>
-                    <div class="card-main">
+                    <div id="card-main">
                         <h2 class="card-name">Ben Lublin</h2>
                         <div class="location">
                             <img src="imgs/map-marker.png" alt="Map marker">
@@ -47,8 +47,7 @@
                         <p class="skills">Developer | Engineer | Pizza Chef</p>
                         <p class="blurb">Programming challenges by day; Baking pizza by night!</p>
                         <div class="settings">
-                            <img src="imgs/gear.png" alt="settings cogwheel">
-                            <a href="">edit profile</a>
+                            <p onclick="changeName()"><img src="imgs/gear.png" alt="settings cogwheel">edit profile</p>
                         </div>
                     </div>
                 </div>
@@ -79,17 +78,17 @@
                         <h4>Connections Requests</h4>
                     </div>
                     <div class="conn-req-main">
-                        <div class="conn-req-user">
+                        <div class="conn-req-user" id="conn-req-top-user">
                                 <img src="imgs/todd-s.jpg" alt="Todd S" class="profile-picture">
                                 <h4 class="conn-req-user-name">Todd S</h4>
-                                <button class="yes">&check;</button>
-                                <button class="no">&rotimes;</button>
+                                <button onclick="updateConn(this)" class="conn-req-top-user yes">&check;</button>
+                                <button onclick="updateConn(this)" class="conn-req-top-user no">&rotimes;</button>
                         </div>
-                        <div class="conn-req-user">
+                        <div class="conn-req-user" id="conn-req-bottom-user">
                                 <img src="imgs/phil-s.jpg" alt="Phil S" class="profile-picture" >
                                 <h4 class="conn-req-user-name">Phil S</h4>
-                                <button class="yes">&check;</button>
-                                <button class="no">&rotimes;</button>
+                                <button onclick="updateConn(this)" class="conn-req-bottom-user yes">&check;</button>
+                                <button onclick="updateConn(this)" class="conn-req-bottom-user no">&rotimes;</button>
                         </div>
                     </div>
                 </div>
@@ -98,7 +97,7 @@
 
                 <div id="your-conn">
                     <div class="your-conn-top">
-                        <button class="your-conn-count conn-button">500+</button>
+                        <button class="your-conn-count conn-button"><span id="span-count">400</span></button>
                         <h4>Your Connections</h4>
                     </div>
                     <div class="your-conn-main">
@@ -126,5 +125,6 @@
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

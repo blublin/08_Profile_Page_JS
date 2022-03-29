@@ -100,7 +100,7 @@ Middle Left
     border: 3px solid white;
     margin-top: 20px;
 }
-.card-main {
+#card-main {
     border: 2px solid gray;
     padding: 40px 15px 10px;
 }
@@ -123,12 +123,12 @@ Middle Left
 .settings {
     display: flex;
     }
-.settings > img {
+.settings img {
     height: 15px;
     margin-right: 5px;
 }
-.settings > a {
-    color: initial;
+.settings > p {
+    color: blue;
     text-decoration: underline;
 }
 
