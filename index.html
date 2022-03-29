@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container"> 
+        <!-- Header -->
+        <div id="top-bar"> <!-- extend -->
+            <div class="nav">
+                <ul class="nav-links">
+                    <h1 class="nav-title">Profile</h1>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active">My Profile</a></li>
+                    <li><a href="#">Find Connections</a></li>
+                </ul>
+                <button id="sign-out">Sign Out</button>
+            </div>
+        </div>
+
+        <!-- Main Body -->
+        <div id="main-body">
+
+            <!-- Middle Left -->
+
+            <div id="middle-left">
+
+                <!-- Profile Card -->
+
+                <div id="card">
+                    <div class="card-top-bar">
+                        <img src="imgs/ben_l.jpg" alt="user image" class="user-profile-picture my-picture">
+                    </div>
+                    <div class="card-main">
+                        <h2 class="card-name">Ben Lublin</h2>
+                        <div class="location">
+                            <img src="imgs/map-marker.png" alt="Map marker">
+                            <p>Bay Area, California</p>
+                        </div>
+                        <p class="skills">Developer | Engineer | Pizza Chef</p>
+                        <p class="blurb">Programming challenges by day; Baking pizza by night!</p>
+                        <div class="settings">
+                            <img src="imgs/gear.png" alt="settings cogwheel">
+                            <a href="">edit profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+
+                <div id="education">
+                    <div class="education-top">
+                        <h4>Education</h4>
+                    </div>
+                    <div class="education-main">
+                        <h4 class="education-post-header">Coding Dojo - Full Stack Bootcamp</h4>
+                        <p class="education-post-date">March 2022 - July 2022</p>
+                        <p class="education-post-body">For <strong>sure</strong> triple black belt in 3 stacks!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Right -->
+
+            <div id="middle-right">
+
+                <!-- Connect Requests -->
+                
+                <div id="conn-req">
+                    <div class="conn-req-top">
+                        <button class="conn-req-count conn-button">2</button>
+                        <h4>Connections Requests</h4>
+                    </div>
+                    <div class="conn-req-main">
+                        <div class="conn-req-user">
+                                <img src="imgs/todd-s.jpg" alt="Todd S" class="profile-picture">
+                                <h4 class="conn-req-user-name">Todd S</h4>
+                                <button class="yes">&check;</button>
+                                <button class="no">&rotimes;</button>
+                        </div>
+                        <div class="conn-req-user">
+                                <img src="imgs/phil-s.jpg" alt="Phil S" class="profile-picture" >
+                                <h4 class="conn-req-user-name">Phil S</h4>
+                                <button class="yes">&check;</button>
+                                <button class="no">&rotimes;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Your Connections -->
+
+                <div id="your-conn">
+                    <div class="your-conn-top">
+                        <button class="your-conn-count conn-button">500+</button>
+                        <h4>Your Connections</h4>
+                    </div>
+                    <div class="your-conn-main">
+                        <div class="your-conn-user">
+                            <img src="imgs/adrien-s.jpg" alt="Adrien S" class="profile-picture">
+                            <h4 class="conn-req-user-name">Adrien</h4>
+                        </div>
+                        <div class="your-conn-user">
+                            <img src="imgs/anne-s.jpg" alt="Anne S" class="profile-picture">
+                            <h4 class="your-conn-user-name">Anne S</h4>
+                        </div>
+                        <div class="your-conn-user">
+                            <img src="imgs/alayne-s.jpg" alt="Alayne S" class="profile-picture">
+                            <h4 class="your-conn-user-name">Alayne S</h4>
+                        </div>
+                        <div class="your-conn-user">
+                            <img src="imgs/arry-s.jpg" alt="Arry S" class="profile-picture">
+                            <h4 class="your-conn-user-name">Arry S</h4>
+                        </div>
+                    </div>
+                    <div class="your-conn-bottom">
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

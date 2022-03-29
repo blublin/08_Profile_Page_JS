@@ -1,0 +1,227 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+}
+/* SET PROJECT WIDTH */
+#container {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+==========
+TOP BAR SECTION
+==========
+*/
+
+#top-bar {
+    background-color: black;
+    color: white;
+}
+.nav {
+    width: 700px;
+    margin: 0 auto; 
+}
+.nav, .nav > ul {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-title {
+    margin-right: 10px;
+}
+.nav-links {
+    list-style: none;
+}
+.nav-links > li {
+    margin-left: 20px;
+}
+a {
+    justify-content: flex-end;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+li > a:hover, li > a:active {
+    font-weight: 600;
+}
+#sign-out {
+    background-color:rgb(88, 171, 185);
+    color: white;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 3px;
+    font-size: 16px;
+    box-shadow: 2px 2px rgb(255, 255, 255);
+    padding: 5px 10px;
+}
+
+/*
+==========
+MAIN BODY SECTION
+==========
+*/
+
+#main-body {
+    width: 700px;
+    margin: 0px auto;
+    display: flex;
+    padding: 8px;
+}
+
+/* 
+Middle Left
+*/
+
+#middle-left {
+    margin-right: 30px;
+    flex: 2;
+}
+
+/* Card */
+
+#card {
+    height: 300px;
+    margin: 30px auto 10px;
+}
+
+.card-top-bar {
+    height: 60px;
+    background-color: rgb(13, 184, 251);
+    padding-left: 15px
+}
+.user-profile-picture {
+    height: 75px;
+    border-radius: 50%;
+}
+.my-picture {
+    border: 3px solid white;
+    margin-top: 20px;
+}
+.card-main {
+    border: 2px solid gray;
+    padding: 40px 15px 10px;
+}
+.card-name {
+    padding-top: 20px;
+    margin-bottom: 5px;
+}   
+.location {
+    display: flex;
+    height: 25px;
+    margin: 15px 0 10px;
+}
+.location > img {
+    height: 15px;
+    margin-right: 10px;
+}
+.blurb {
+    margin-bottom: 15px;
+}
+.settings {
+    display: flex;
+    }
+.settings > img {
+    height: 15px;
+    margin-right: 5px;
+}
+.settings > a {
+    color: initial;
+    text-decoration: underline;
+}
+
+
+/* Education */
+
+.education-top {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 10px;
+}
+.education-top > h4 {
+    margin-left: 15px;
+}
+.education-main {
+    border: 3px solid gray;
+    padding: 20px;
+}
+.education-main > * {
+    margin-bottom: 5px;
+}
+.education-post-date {
+    color: rgb(136, 135, 135)
+}
+
+/*
+Middle Right
+*/
+
+#middle-right {
+    flex: 1;
+}
+
+/* Connection Requests
+   & Your Connections*/
+
+#conn-req {
+    margin: 30px a̶u̶t̶o̶ 20px;
+}
+#your-conn {
+    margin: 0 auto;
+}
+.conn-req-top, .your-conn-top {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.conn-req-count, .your-conn-count {
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 15px;
+    border: 0;
+}
+.your-conn-count {
+    padding: 6px 8px;
+}
+.conn-button {
+    pointer-events: none;
+}
+.conn-req-main, .your-conn-main {
+    padding: 10px;
+    border: 3px solid gray;
+}
+.conn-req-user, .your-conn-user {
+    display: flex;
+    align-items: center;
+}
+.conn-req-user > *, .your-conn-user > * {
+    margin: 0 10px 10px 0;
+}
+.conn-req-user > * {
+    flex: 1;
+}
+.conn-req-user-name {
+    flex: 2;
+}
+.profile-picture {
+    height: 30px;
+    border-radius: 50%;
+}
+.yes, .no {
+    font-size: 20px;
+    border-radius: 50%;
+}
+.your-conn-bottom {
+    padding: 10px;
+    border: 3px solid grey;
+    border-top-width: 0;
+}
+.your-conn-bottom > a {
+    color: initial;
+    text-decoration: underline;
+}
